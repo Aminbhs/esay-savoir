@@ -17,6 +17,7 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'rswag'
+gem 'rspec-rails', '~> 3.5'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
