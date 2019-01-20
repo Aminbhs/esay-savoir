@@ -19,7 +19,7 @@ describe 'Formations API' do
           nombre_place_restante: { type: :integer }
         },
         required: [ 'nom', 'programme' ]
-      }, description: "Date format : YYYY-MM-DD / Date example : 2019-30-12"
+      }, description: "Date format : YYYY-MM-DD / Date example : 2019-12-30"
 
       response '201', 'Client created' do
         let(:formation) { { name: 'Dodo', status: 'available' } }

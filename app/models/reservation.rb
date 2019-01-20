@@ -9,7 +9,7 @@ class Reservation < ApplicationRecord
 
   def verify_place
     #verifi si il des places de libre
-    unless (self.formation.nombre_place_total +1) > self.formation.nombre_place_restante && self.formation.nombre_place_restante >= 0
+    unless self.formation.nombre_place_total + 1 > self.formation.nombre_place_restante && self.formation.nombre_place_restante >= 0
       errors.add(:base, "Plus de place" )
     end
   end
