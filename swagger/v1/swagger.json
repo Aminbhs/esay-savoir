@@ -676,34 +676,6 @@
         }
       }
     },
-    "/api/v1/reservations/{id}": {
-      "delete": {
-        "summary": "Delete a reservation",
-        "tags": [
-          "Reservations"
-        ],
-        "produces": [
-          "application/json",
-          "application/xml"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "type": "string",
-            "required": true
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Reservation deleted"
-          },
-          "404": {
-            "description": "Reservation not found"
-          }
-        }
-      }
-    },
     "/api/v1/reservations/delete_by_client_and_formation_id": {
       "delete": {
         "summary": "Delete a reservation",

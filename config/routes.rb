@@ -13,7 +13,7 @@ Rails.application.routes.draw do
       end
 
       resources :formations, only: [ :index, :show, :update, :create, :destroy]
-      resources :reservations, only: [ :index, :show, :update, :create, :destroy] do
+      resources :reservations, only: [:create] do
       collection do
           delete 'delete_by_client_and_formation_id'
       end
